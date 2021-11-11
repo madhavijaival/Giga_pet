@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  /*To set background image*/
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(
+        https://image.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg
+      )50%50%fixed;
+  background-size: cover;
+}
+
+main {
+  display: block;
+  height: 175px;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  padding-top: 25px;
+  border-top: 1px solid black;
+}
+
+footer a {
+  float: left;
+  margin: 5px;
+}
+
+.pet-image {
+  height: 300px;
+}
+
+.dashboard div {
+  display: block;
+}
+
+.pet-image-container {
+  float: center;
+  padding: 10px;
+}
+
+.dashboard {
+  float: left;
+  padding: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  width: 100px;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  background-color: #1e2835;
+  border-color: #404853;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(246, 246, 246, 0.1) 0%,
+    rgba(30, 40, 53, 0) 66%
+  );
+  color: #fafafa;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin-left: 30%;
+  padding: 70px;
+  overflow: hidden;
+}
+
+/* button decoration & effects*/
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.treat-button {
+  color: #0a2c12;
+  border-color: #1e7e34;
+  background-color: #28a745;
+}
+.treat-button:hover {
+  background-color: #1e7e34;
+  color: white;
+}
+
+.play-button {
+  color: #66121a;
+  border-color: #bd2130;
+  background-color: #dc3545;
+}
+.play-button:hover {
+  background-color: #bd2130;
+  color: white;
+}
+
+.exercise-button {
+  color: #6d5200;
+  border-color: #d39e00;
+  background-color: #ffc107;
+}
+.exercise-button:hover {
+  background-color: #d39e00;
+  color: white;
+}
+
+.love-button {
+  color: #062a30;
+  border-color: #117a8b;
+  background-color: #17a2b8;
+}
+.love-button:hover {
+  background-color: #117a8b;
+  color: white;
+}
+
+/* message */
+.msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  background-color: pink;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.05);
+}
+
+/*fade*/
+.animate {
+  opacity: 0;
+  transition: all 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.slide-in-down {
+  transform: translateY(-100%) translateX(-50%);
+}
